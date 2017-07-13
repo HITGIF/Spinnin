@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6200A5DD1F17A0DB003BAB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5DC1F17A0DB003BAB70 /* AppDelegate.swift */; };
-		6200A5DF1F17A0DB003BAB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5DE1F17A0DB003BAB70 /* ViewController.swift */; };
-		6200A5E21F17A0DB003BAB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6200A5E01F17A0DB003BAB70 /* Main.storyboard */; };
 		6200A5E41F17A0DB003BAB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6200A5E31F17A0DB003BAB70 /* Assets.xcassets */; };
 		6200A5E71F17A0DB003BAB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6200A5E51F17A0DB003BAB70 /* LaunchScreen.storyboard */; };
 		6200A5F21F17A0DB003BAB70 /* SpinninUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5F11F17A0DB003BAB70 /* SpinninUITests.swift */; };
+		6200A6001F17A0F5003BAB70 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */; };
+		6200A6011F17A0F5003BAB70 /* PlayerImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6200A5FD1F17A0F5003BAB70 /* PlayerImageCell.xib */; };
+		6200A6021F17A0F5003BAB70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */; };
+		6200A6031F17A0F5003BAB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200A5FF1F17A0F5003BAB70 /* ViewController.swift */; };
+		6200A6051F17A100003BAB70 /* Players in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6041F17A100003BAB70 /* Players */; };
+		6200A6071F17A111003BAB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6061F17A111003BAB70 /* Main.storyboard */; };
+		6200A6091F17A143003BAB70 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6081F17A143003BAB70 /* Podfile */; };
+		C3FC0C3FDD0599FF7C9552E6 /* Pods_Spinnin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C586E5561E57759EFDA42EFC /* Pods_Spinnin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120A6B200C07A55CFD7928AE /* Pods-Spinnin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinnin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spinnin/Pods-Spinnin.release.xcconfig"; sourceTree = "<group>"; };
 		6200A5D91F17A0DB003BAB70 /* Spinnin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spinnin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6200A5DC1F17A0DB003BAB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6200A5DE1F17A0DB003BAB70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6200A5E11F17A0DB003BAB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6200A5E31F17A0DB003BAB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6200A5E61F17A0DB003BAB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6200A5E81F17A0DB003BAB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6200A5ED1F17A0DB003BAB70 /* SpinninUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinninUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6200A5F11F17A0DB003BAB70 /* SpinninUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinninUITests.swift; sourceTree = "<group>"; };
 		6200A5F31F17A0DB003BAB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
+		6200A5FD1F17A0F5003BAB70 /* PlayerImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerImageCell.xib; sourceTree = "<group>"; };
+		6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6200A5FF1F17A0F5003BAB70 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6200A6041F17A100003BAB70 /* Players */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Players; sourceTree = "<group>"; };
+		6200A6061F17A111003BAB70 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6200A6081F17A143003BAB70 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		7B2AF34B43A993A7A0332E74 /* Pods-Spinnin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinnin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spinnin/Pods-Spinnin.debug.xcconfig"; sourceTree = "<group>"; };
+		C586E5561E57759EFDA42EFC /* Pods_Spinnin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spinnin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FC0C3FDD0599FF7C9552E6 /* Pods_Spinnin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58738F97E1FB85824701C77B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AF34B43A993A7A0332E74 /* Pods-Spinnin.debug.xcconfig */,
+				120A6B200C07A55CFD7928AE /* Pods-Spinnin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6200A5D01F17A0DB003BAB70 = {
 			isa = PBXGroup;
 			children = (
 				6200A5DB1F17A0DB003BAB70 /* Spinnin */,
 				6200A5F01F17A0DB003BAB70 /* SpinninUITests */,
 				6200A5DA1F17A0DB003BAB70 /* Products */,
+				58738F97E1FB85824701C77B /* Pods */,
+				C82CEB49ADEAB542D9748E71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +104,16 @@
 			isa = PBXGroup;
 			children = (
 				6200A5DC1F17A0DB003BAB70 /* AppDelegate.swift */,
-				6200A5DE1F17A0DB003BAB70 /* ViewController.swift */,
-				6200A5E01F17A0DB003BAB70 /* Main.storyboard */,
+				6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */,
+				6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */,
+				6200A5FF1F17A0F5003BAB70 /* ViewController.swift */,
+				6200A6041F17A100003BAB70 /* Players */,
 				6200A5E31F17A0DB003BAB70 /* Assets.xcassets */,
+				6200A5FD1F17A0F5003BAB70 /* PlayerImageCell.xib */,
+				6200A6061F17A111003BAB70 /* Main.storyboard */,
 				6200A5E51F17A0DB003BAB70 /* LaunchScreen.storyboard */,
 				6200A5E81F17A0DB003BAB70 /* Info.plist */,
+				6200A6081F17A143003BAB70 /* Podfile */,
 			);
 			path = Spinnin;
 			sourceTree = "<group>";
@@ -96,6 +127,14 @@
 			path = SpinninUITests;
 			sourceTree = "<group>";
 		};
+		C82CEB49ADEAB542D9748E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C586E5561E57759EFDA42EFC /* Pods_Spinnin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6200A5F61F17A0DB003BAB70 /* Build configuration list for PBXNativeTarget "Spinnin" */;
 			buildPhases = (
+				306E8F7FE5C17101EA4EC318 /* [CP] Check Pods Manifest.lock */,
 				6200A5D51F17A0DB003BAB70 /* Sources */,
 				6200A5D61F17A0DB003BAB70 /* Frameworks */,
 				6200A5D71F17A0DB003BAB70 /* Resources */,
+				25A96AE38288F816C7370B6B /* [CP] Embed Pods Frameworks */,
+				EFCA4A4AD18EEF644F39CDD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6200A6091F17A143003BAB70 /* Podfile in Resources */,
+				6200A6011F17A0F5003BAB70 /* PlayerImageCell.xib in Resources */,
+				6200A6071F17A111003BAB70 /* Main.storyboard in Resources */,
 				6200A5E71F17A0DB003BAB70 /* LaunchScreen.storyboard in Resources */,
+				6200A6051F17A100003BAB70 /* Players in Resources */,
 				6200A5E41F17A0DB003BAB70 /* Assets.xcassets in Resources */,
-				6200A5E21F17A0DB003BAB70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +241,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25A96AE38288F816C7370B6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spinnin/Pods-Spinnin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		306E8F7FE5C17101EA4EC318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCA4A4AD18EEF644F39CDD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spinnin/Pods-Spinnin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6200A5D51F17A0DB003BAB70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6200A5DF1F17A0DB003BAB70 /* ViewController.swift in Sources */,
+				6200A6001F17A0F5003BAB70 /* CustomizeViewController.swift in Sources */,
 				6200A5DD1F17A0DB003BAB70 /* AppDelegate.swift in Sources */,
+				6200A6031F17A0F5003BAB70 /* ViewController.swift in Sources */,
+				6200A6021F17A0F5003BAB70 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6200A5E01F17A0DB003BAB70 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6200A5E11F17A0DB003BAB70 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6200A5E51F17A0DB003BAB70 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +428,7 @@
 		};
 		6200A5F71F17A0DB003BAB70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2AF34B43A993A7A0332E74 /* Pods-Spinnin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MPW443922D;
@@ -354,6 +442,7 @@
 		};
 		6200A5F81F17A0DB003BAB70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120A6B200C07A55CFD7928AE /* Pods-Spinnin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MPW443922D;

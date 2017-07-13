@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UICollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-oc-wmL">
+                    <rect key="frame" x="5" y="5" width="35" height="35"/>
+                </imageView>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-ZW-gGo">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_white_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="pre-Dm-ISo">
+                            <rect key="frame" x="10" y="10" width="25" height="25"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pre-Dm-ISo" firstAttribute="top" secondItem="PFp-ZW-gGo" secondAttribute="top" constant="10" id="3f4-W1-Uxc"/>
+                        <constraint firstAttribute="trailing" secondItem="pre-Dm-ISo" secondAttribute="trailing" constant="10" id="MT4-N9-aXV"/>
+                        <constraint firstItem="pre-Dm-ISo" firstAttribute="centerX" secondItem="PFp-ZW-gGo" secondAttribute="centerX" id="XWp-JC-S8N"/>
+                        <constraint firstAttribute="bottom" secondItem="pre-Dm-ISo" secondAttribute="bottom" constant="10" id="YDi-l4-9Uh"/>
+                        <constraint firstItem="pre-Dm-ISo" firstAttribute="centerY" secondItem="PFp-ZW-gGo" secondAttribute="centerY" id="hA0-6x-Q7s"/>
+                        <constraint firstItem="pre-Dm-ISo" firstAttribute="leading" secondItem="PFp-ZW-gGo" secondAttribute="leading" constant="10" id="q8d-gH-vbO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cUN-oc-wmL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="1xi-tU-ImT"/>
+                <constraint firstAttribute="trailing" secondItem="PFp-ZW-gGo" secondAttribute="trailing" id="Amc-eh-JI9"/>
+                <constraint firstAttribute="trailing" secondItem="cUN-oc-wmL" secondAttribute="trailing" constant="5" id="H7l-TO-LWS"/>
+                <constraint firstItem="cUN-oc-wmL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="LPO-cs-Rn7"/>
+                <constraint firstAttribute="bottom" secondItem="cUN-oc-wmL" secondAttribute="bottom" constant="5" id="QtA-fU-wtW"/>
+                <constraint firstItem="PFp-ZW-gGo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X7T-dK-vOf"/>
+                <constraint firstItem="PFp-ZW-gGo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hkw-GI-OH1"/>
+                <constraint firstAttribute="bottom" secondItem="PFp-ZW-gGo" secondAttribute="bottom" id="ypP-dw-3bg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-228.5" y="-273"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_done_white_48pt" width="48" height="48"/>
+    </resources>
+</document>
