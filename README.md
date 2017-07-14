@@ -1,5 +1,5 @@
 # Spinnin'
-![Logo](https://raw.githubusercontent.com/HITGIF/Spinnin/master/Spinnin/Assets.xcassets/AppIcon.appiconset/Spinnin-180.png)
+![Logo](https://raw.githubusercontent.com/HITGIF/Spinnin/master/Spinnin/Assets.xcassets/Spinnin-nbg.imageset/Spinnin-nbg.png)
 
 A save-the-dot game in which you need to prevent your spinning dot from touching others.
 
