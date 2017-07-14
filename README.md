@@ -1,9 +1,9 @@
 # Spinnin'
-[!https://raw.githubusercontent.com/HITGIF/Spinnin/master/Spinnin/Assets.xcassets/AppIcon.appiconset/Spinnin-180.png](Logo)
+![Logo](https://raw.githubusercontent.com/HITGIF/Spinnin/master/Spinnin/Assets.xcassets/AppIcon.appiconset/Spinnin-180.png)
 
 A save-the-dot game in which you need to prevent your spinning dot from touching others.
 
-This project is based on [https://github.com/JakeLin/SaveTheDot](JakeLin/SaveTheDot), which is released under [https://github.com/JakeLin/SaveTheDot/blob/master/LICENSE](MIT License).
+This project is based on [JakeLin/SaveTheDot](https://github.com/JakeLin/SaveTheDot), which is released under [MIT License](https://github.com/JakeLin/SaveTheDot/blob/master/LICENSE).
 
 ## License
 
