@@ -27,15 +27,14 @@ class SettingsViewController: UITableViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     let userDefaults = UserDefaults.standard
-    var dotSize = 1.0
     var enemySpeed = 1.0
+    var dotSize = 1.0
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
         UIApplication.shared.isStatusBarHidden = false
         if UI_USER_INTERFACE_IDIOM() == .phone { UIApplication.shared.statusBarStyle = .default }
-        
         setupSettings()
     }
     
@@ -62,17 +61,13 @@ class SettingsViewController: UITableViewController {
     }
     
     func popOut() {
-        
-        if let vc = self.presentingViewController as? ViewController {
-            self.dismiss(animated: true, completion: {vc.initSettings()})
-        }
+        if let vc = self.presentingViewController as? ViewController { self.dismiss(animated: true, completion: {vc.initSettings()}) }
     }
     
     @IBAction func sizeChanged(_ sender: Any) {
         
         dotSize = 0.25 * Double(Int(sizeSlider.value))
         sizeLabel.text = String(dotSize) + "x"
-
     }
     
     @IBAction func speedChanged(_ sender: Any) {
