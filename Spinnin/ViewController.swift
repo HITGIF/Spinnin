@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
     fileprivate let backgroundColors = [#colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1),#colorLiteral(red: 0.1490196078, green: 0.1960784314, blue: 0.2196078431, alpha: 1)]
     fileprivate let textColors = [#colorLiteral(red: 0.1490196078, green: 0.1960784314, blue: 0.2196078431, alpha: 1),#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
     
+    fileprivate var interstitialAdView: GADInterstitial!
     fileprivate var playerView = UIImageView(frame: .zero)
     fileprivate var playerImage: UIImage?
     fileprivate var deadBackView: UIView?
@@ -72,8 +74,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        setupPlayerView()
-        if gameState != .setting { gameState = .ready }
+        if gameState != .gameOver { setupPlayerView() }
+        if gameState != .setting && gameState != .gameOver { gameState = .ready }
     }
     
     override func viewDidLoad() {
@@ -81,8 +83,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.applicationDidEnterForeground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         
-        if gameState != .setting {
+        if gameState != .setting && gameState != .gameOver {
             
+            initAd()
             initSettings()
             prepareGame()
         }
@@ -207,6 +210,35 @@ extension ViewController {
         }
     }
     
+    func initAd() {
+        interstitialAdView = createAndLoadInterstitial()
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        
+        let interstitial = GADInterstitial.init(adUnitID: "ca-app-pub-9841217337381410/7307443886")
+        let request = GADRequest()
+        
+        /* TEST DEVICES */
+//        request.testDevices = [kGADSimulatorID]
+        
+        interstitial.delegate = self
+        interstitial.load(request)
+        return interstitial
+    }
+    
+    func displayAd() {
+        
+        if shouldDisplayAd() {
+            if interstitialAdView.isReady { interstitialAdView.present(fromRootViewController: self) }
+            else { print("Ad wasn't ready") }
+        }
+    }
+    
+    func shouldDisplayAd() -> Bool {
+        return arc4random_uniform(UInt32(3)) == 0
+    }
+    
     func registerSettings() {
         
         if UserDefaults.standard.object(forKey: "theme") == nil { UserDefaults.standard.register(defaults: ["theme": 0]) }
@@ -291,7 +323,9 @@ extension ViewController {
         
         stopGame()
         removeEnemies()
+        displayAd()
         animateDeadView(reveal: true)
+        
     }
     
     func stopGame() {
@@ -461,18 +495,6 @@ extension ViewController {
         }
     }
     
-    
-    func getGameOverTitleAndMessage() -> (String, String) {
-        
-        let elapsedSeconds = Int(elapsedTime) % 60
-        switch elapsedSeconds {
-        case 0..<10: return ("I try again 😂", "Seriously, you need more practice 😒")
-        case 10..<30: return ("Another go 😉", "No bad, you are getting there 😁")
-        case 30..<60: return ("Play again 😉", "Very good 👍")
-        default: return ("Off cause 😚", "Legend, olympic player, go 🇧🇷")
-        }
-    }
-    
     func centerPlayerView() {
         
         playerAnimator = UIViewPropertyAnimator(duration: playerAnimationDuration, dampingRatio: 0.5, animations: { [weak self] in self?.playerView.center = (self?.view.center)!})
@@ -491,5 +513,12 @@ extension ViewController {
         animation.repeatCount = 1
         animation.beginTime = CACurrentMediaTime()
         playerView.layer.add(animation, forKey: "pop")
+    }
+}
+
+extension ViewController: GADInterstitialDelegate {
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        initAd()
     }
 }

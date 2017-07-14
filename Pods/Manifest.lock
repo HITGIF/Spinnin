@@ -1,17 +1,20 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.21.0)
   - Material (2.6.3):
     - Material/Core (= 2.6.3)
   - Material/Core (2.6.3)
   - VTAcknowledgementsViewController (1.2.1)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - Material
   - VTAcknowledgementsViewController
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 4a6f1b43c8cc0e1e95a3b59d9f52a01671c6f9f3
   Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
   VTAcknowledgementsViewController: e1de80f2c0ce31cc7e1c6f1c8aaeec2770371f09
 
-PODFILE CHECKSUM: 72aa2b2f47cc1e3146659d8aa9b981062e4afe8f
+PODFILE CHECKSUM: 2afca10dabdb49f9fe55ab05c50792f7d163c0b0
 
 COCOAPODS: 1.2.1

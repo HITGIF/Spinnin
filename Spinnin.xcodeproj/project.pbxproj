@@ -126,9 +126,9 @@
 		629131DF1F17A1F0003D03A8 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
-				62C353161F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist */,
 				6200A5DC1F17A0DB003BAB70 /* AppDelegate.swift */,
 				6200A5E31F17A0DB003BAB70 /* Assets.xcassets */,
+				62C353161F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist */,
 				6200A5E81F17A0DB003BAB70 /* Info.plist */,
 				6200A6081F17A143003BAB70 /* Podfile */,
 				6200A6041F17A100003BAB70 /* Players */,
