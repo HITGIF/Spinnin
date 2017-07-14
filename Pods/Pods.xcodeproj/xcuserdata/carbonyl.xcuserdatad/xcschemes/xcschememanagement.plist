@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>VTAcknowledgementsViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F9EBDE7F498986DE46C1667285AC157</key>
+		<key>4E4236D23DCA0F134DAD06F2420E5D73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8D511562A8961C5B7A5DD87BAE2374F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5CAC53E06990AAA7DB74D01F412A156</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,6 +18,8 @@
 		6200A6051F17A100003BAB70 /* Players in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6041F17A100003BAB70 /* Players */; };
 		6200A6071F17A111003BAB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6061F17A111003BAB70 /* Main.storyboard */; };
 		6200A6091F17A143003BAB70 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6200A6081F17A143003BAB70 /* Podfile */; };
+		62C353151F18775800A291F4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C353141F18775800A291F4 /* AboutViewController.swift */; };
+		62C353171F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62C353161F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist */; };
 		C3FC0C3FDD0599FF7C9552E6 /* Pods_Spinnin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C586E5561E57759EFDA42EFC /* Pods_Spinnin.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +49,9 @@
 		6200A5FF1F17A0F5003BAB70 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6200A6041F17A100003BAB70 /* Players */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Players; sourceTree = "<group>"; };
 		6200A6061F17A111003BAB70 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		6200A6081F17A143003BAB70 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		6200A6081F17A143003BAB70 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62C353141F18775800A291F4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		62C353161F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-Spinnin-acknowledgements.plist"; sourceTree = "<group>"; };
 		7B2AF34B43A993A7A0332E74 /* Pods-Spinnin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinnin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spinnin/Pods-Spinnin.debug.xcconfig"; sourceTree = "<group>"; };
 		C586E5561E57759EFDA42EFC /* Pods_Spinnin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spinnin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +126,7 @@
 		629131DF1F17A1F0003D03A8 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				62C353161F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist */,
 				6200A5DC1F17A0DB003BAB70 /* AppDelegate.swift */,
 				6200A5E31F17A0DB003BAB70 /* Assets.xcassets */,
 				6200A5E81F17A0DB003BAB70 /* Info.plist */,
@@ -137,6 +142,7 @@
 				6200A5FF1F17A0F5003BAB70 /* ViewController.swift */,
 				6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */,
 				6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */,
+				62C353141F18775800A291F4 /* AboutViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -212,7 +218,7 @@
 				TargetAttributes = {
 					6200A5D81F17A0DB003BAB70 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = MPW443922D;
+						DevelopmentTeam = MPPUFL3L6R;
 						ProvisioningStyle = Automatic;
 					};
 					6200A5EC1F17A0DB003BAB70 = {
@@ -249,6 +255,7 @@
 			files = (
 				6200A6091F17A143003BAB70 /* Podfile in Resources */,
 				6200A6011F17A0F5003BAB70 /* PlayerImageCell.xib in Resources */,
+				62C353171F187DF100A291F4 /* Pods-Spinnin-acknowledgements.plist in Resources */,
 				6200A6071F17A111003BAB70 /* Main.storyboard in Resources */,
 				6200A5E71F17A0DB003BAB70 /* LaunchScreen.storyboard in Resources */,
 				6200A6051F17A100003BAB70 /* Players in Resources */,
@@ -321,6 +328,7 @@
 				6200A6001F17A0F5003BAB70 /* CustomizeViewController.swift in Sources */,
 				6200A5DD1F17A0DB003BAB70 /* AppDelegate.swift in Sources */,
 				6200A6031F17A0F5003BAB70 /* ViewController.swift in Sources */,
+				62C353151F18775800A291F4 /* AboutViewController.swift in Sources */,
 				6200A6021F17A0F5003BAB70 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,12 +463,14 @@
 			baseConfigurationReference = 7B2AF34B43A993A7A0332E74 /* Pods-Spinnin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MPW443922D;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MPPUFL3L6R;
 				INFOPLIST_FILE = Spinnin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = studio.carbonylgroup.Spinnin;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.carbonylgroup.Spinning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -470,12 +480,14 @@
 			baseConfigurationReference = 120A6B200C07A55CFD7928AE /* Pods-Spinnin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MPW443922D;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MPPUFL3L6R;
 				INFOPLIST_FILE = Spinnin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = studio.carbonylgroup.Spinnin;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.carbonylgroup.Spinning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

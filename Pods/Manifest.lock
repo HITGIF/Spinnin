@@ -2,13 +2,16 @@ PODS:
   - Material (2.6.3):
     - Material/Core (= 2.6.3)
   - Material/Core (2.6.3)
+  - VTAcknowledgementsViewController (1.2.1)
 
 DEPENDENCIES:
   - Material
+  - VTAcknowledgementsViewController
 
 SPEC CHECKSUMS:
   Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  VTAcknowledgementsViewController: e1de80f2c0ce31cc7e1c6f1c8aaeec2770371f09
 
-PODFILE CHECKSUM: d4668852aa40761723c56ef39adf49ee7289abb9
+PODFILE CHECKSUM: 72aa2b2f47cc1e3146659d8aa9b981062e4afe8f
 
 COCOAPODS: 1.2.1
