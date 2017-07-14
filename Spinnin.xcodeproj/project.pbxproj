@@ -134,9 +134,9 @@
 		629131E01F17A214003D03A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */,
-				6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */,
 				6200A5FF1F17A0F5003BAB70 /* ViewController.swift */,
+				6200A5FE1F17A0F5003BAB70 /* SettingsViewController.swift */,
+				6200A5FC1F17A0F5003BAB70 /* CustomizeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
