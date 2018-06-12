@@ -1,7 +1,7 @@
 //
 // VTAcknowledgement.m
 //
-// Copyright (c) 2013-2017 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2018 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,24 +23,14 @@
 
 #import "VTAcknowledgement.h"
 
-@interface VTAcknowledgement ()
-
-- (instancetype)init NS_UNAVAILABLE;
-
-@end
-
 
 @implementation VTAcknowledgement
 
-- (instancetype)init
-{
+- (instancetype)init {
     @throw nil;
 }
 
-- (instancetype)initWithTitle:(NSString *)title
-                         text:(NSString *)text
-                      license:(NSString *)license
-{
+- (instancetype)initWithTitle:(NSString *)title text:(NSString *)text license:(NSString *)license {
     self = [super init];
 
     if (self) {

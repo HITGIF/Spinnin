@@ -469,8 +469,8 @@ extension ViewController {
             
             UIView.animate(withDuration: 1, delay: 0,options: UIViewAnimationOptions.curveEaseIn,animations: {
                 
-                let scaleX = self.view.width / (self.deadBackView?.width)! * 5.0
-                let scaleY = self.view.height / (self.deadBackView?.height)! * 5.0
+                let scaleX = self.view.bounds.width / (self.deadBackView?.bounds.width)! * 5.0
+                let scaleY = self.view.bounds.height / (self.deadBackView?.bounds.height)! * 5.0
                 
                 self.deadBackView?.transform = CGAffineTransform(scaleX: max(scaleX, scaleY), y: max(scaleX, scaleY))
                 self.deadBackView?.layer.cornerRadius = self.radius * 1.25

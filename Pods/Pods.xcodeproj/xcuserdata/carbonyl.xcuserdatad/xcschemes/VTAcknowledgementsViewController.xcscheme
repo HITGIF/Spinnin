@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4E4236D23DCA0F134DAD06F2420E5D73'
-               BlueprintName = 'VTAcknowledgementsViewController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'VTAcknowledgementsViewController.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EE9CE4B0220E3683884BC276BF67758E"
+               BlueprintName = "VTAcknowledgementsViewController"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "VTAcknowledgementsViewController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

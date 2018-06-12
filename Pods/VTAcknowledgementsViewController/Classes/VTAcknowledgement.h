@@ -1,7 +1,7 @@
 //
 // VTAcknowledgement.h
 //
-// Copyright (c) 2013-2017 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2018 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -49,6 +49,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy, nullable) NSString *license;
 
+/**
+ No `init` support, in order to enforce nonnull title and text properties.
+
+ Please use `initWithTitle:text:license:` instead.
+ */
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  Initializes an acknowledgement with a title and a body text.

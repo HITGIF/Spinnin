@@ -1,7 +1,7 @@
 //
 // VTAcknowledgementsParser.m
 //
-// Copyright (c) 2013-2017 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2013-2018 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -38,13 +38,11 @@
 
 @implementation VTAcknowledgementsParser
 
-- (instancetype)init
-{
+- (instancetype)init {
     @throw nil;
 }
 
-- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath
-{
+- (nonnull instancetype)initWithAcknowledgementsPlistPath:(nonnull NSString *)acknowledgementsPlistPath {
     self = [super init];
 
     if (self) {
@@ -64,10 +62,7 @@
 
         NSMutableArray <VTAcknowledgement *> *acknowledgements = [NSMutableArray array];
         for (NSDictionary *preferenceSpecifier in preferenceSpecifiers) {
-            VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc]
-                                                  initWithTitle:preferenceSpecifier[@"Title"]
-                                                  text:preferenceSpecifier[@"FooterText"]
-                                                  license:preferenceSpecifier[@"License"]];
+            VTAcknowledgement *acknowledgement = [[VTAcknowledgement alloc] initWithTitle:preferenceSpecifier[@"Title"] text:preferenceSpecifier[@"FooterText"] license:preferenceSpecifier[@"License"]];
             [acknowledgements addObject:acknowledgement];
         }
 
